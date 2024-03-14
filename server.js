@@ -48,6 +48,9 @@ app.use('/',trainingRouter)
 
 // Message from User
 
+app.get('/',(req,res)=>{
+    res.json({message:true})
+})
 
 app.get('/api/v1/check',(req,res)=>{
     res.json({message:"Success",success:true})
